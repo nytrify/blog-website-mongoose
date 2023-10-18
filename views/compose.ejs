@@ -1,0 +1,18 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<%- include("partials/header") -%>
+<h1>Compose</h1>
+<form method="post" action="/compose">
+    <div class="form-group">
+        <label for="titleInp">Title</label>
+        <input class="form-control" type="text" name="titleInp">
+    </div>
+
+    <div class="form-group">
+        <label for="postInp">Post</label>
+        <textarea class="form-control" name="postInp" rows="5" cols="30"></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit" name="submitBtn">Publish</button>
+</form>
+<%- include("partials/footer") -%>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
